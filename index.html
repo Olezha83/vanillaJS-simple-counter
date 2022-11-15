@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <h1>Total count: <span id="total-count">0</span></h1>
+
+    <div class="ib-elem-parent">
+      <button id="decrement-count" class="small-btn">–</button>
+      <button id="increment-count" class="small-btn">+</button>
+    </div>
+
+    <div>
+      <button id="reset-counter" class="reset-btn">Reset total count</button>
+    </div>
+
+    <div class="step">Choose counter's step:</div>
+
+    <div class="ib-elem-parent">
+      <input type="range" id="counter-step" min="1" max="10" value="1" />
+      <span id="step-value" class="small-btn"></span>
+    </div>
+
+    <div>
+      <button id="reset-counter-step" class="reset-btn">
+        Reset counter's step
+      </button>
+    </div>
+
+    <div>
+      <button id="reset-both" class="reset-btn">
+        Reset both – total count and counter's step
+      </button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
